@@ -1,5 +1,5 @@
 from pages.main_page import MainPage
-LINK_MAIN_PAGE = 'http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209?promo=midsummer'
+LINK_MAIN_PAGE = '"http://selenium1py.pythonanywhere.com/"'
 
 def test_guest_can_go_to_login_page(browser):
     link = LINK_MAIN_PAGE
