@@ -7,8 +7,8 @@ import pytest
 LINK_PRODUCT_PAGE = 'http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/?promo=newYear2019'
 
 @pytest.mark.need_review
-def test_guest_can_add_product_to_basket(browser, link):
-    #link = LINK_PRODUCT_PAGE
+def test_guest_can_add_product_to_basket(browser):
+    link = LINK_PRODUCT_PAGE
     page = ProductPage(browser, link)
     page.open()
     page.add_product_to_basket()
